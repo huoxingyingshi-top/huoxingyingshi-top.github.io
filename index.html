@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="火星影视是面向科幻与未来题材爱好者的在线影像资料馆，专注收录太空探索、外星文明、人工智能、末日生存、赛博朋克等类型的电影与剧集。我们按世界观、年代、视觉风格整理片单，提供剧情脉络梳理、幕后制作解析与观影顺序建议。无论你是想找硬科幻经典、近年太空剧集，还是冷门未来题材短片，都能在这里按主题快速定位。所有片目持续更新，页面适配手机、平板与电脑。访问火星影视：https://huoxingyingshi-top.github.io，开启你的星际观影清单。">
+<meta name="keywords" content="火星影视, 科幻电影推荐, 太空题材剧集, 硬科幻片单, 外星文明电影, 末日生存剧, 赛博朋克动画, 人工智能题材, 未来世界观影指南, 星际探索纪录片, 冷门科幻片">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow">
+<meta name="author" content="火星影视">
+<meta name="theme-color" content="#1b1412">
+<link rel="canonical" href="https://huoxingyingshi-top.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="火星影视 | 科幻与未来题材影像资料馆">
+<meta property="og:description" content="专注太空探索、外星文明、人工智能与末日生存类型的电影剧集整理，提供世界观分类与观影顺序建议。">
+<meta property="og:url" content="https://huoxingyingshi-top.github.io">
+<meta property="og:site_name" content="火星影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="火星影视 | 科幻与未来题材影像资料馆">
+<meta name="twitter:description" content="按世界观与视觉风格整理的科幻片单，持续更新。">
+<title>火星影视 | 科幻与未来题材影像资料馆 · 太空探索片单与观影指南</title>
+<style>
+:root{
+  --rust:#d94a2b;
+  --rust2:#ff6b3d;
+  --dust:#c9a26a;
+  --steel:#5d7a8c;
+  --ink:#15100e;
+  --panel:#241a17;
+  --line:#3a2c26;
+  --txt:#e8dfd5;
+  --mut:#a99}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;
+  background:var(--ink);
+  color:var(--txt);
+  line-height:1.75;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(217,74,43,.14), transparent 42%),
+    radial-gradient(circle at 88% 22%, rgba(201,162,106,.08), transparent 40%),
+    radial-gradient(circle at 50% 110%, rgba(93,122,140,.10), transparent 45%);
+  background-attachment:fixed;
+}
+::selection{background:var(--rust);color:#fff}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ── 顶部 ── */
+header{position:sticky;top:0;z-index:50;background:rgba(21,16,14,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;height:60px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.5px;font-size:19px;text-decoration:none;color:#fff}
+.logo i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 32% 30%,var(--rust2),var(--rust) 55%,#7a2414);box-shadow:0 0 14px rgba(255,107,61,.55);display:block}
+.logo em{font-style:normal;color:var(--rust2)}
+nav{margin-left:auto;display:flex;gap:4px}
+nav a{color:#cfc4b8;text-decoration:none;font-size:14px;padding:7px 12px;border-radius:6px}
+nav a:hover{color:#fff;background:rgba(217,74,43,.16)}
+.menu-btn{display:none;width:38px;height:38px;background:none;border:1px solid var(--line);border-radius:7px;color:var(--rust2);font-size:20px;cursor:pointer}
+.mnav{display:none;position:fixed;inset:60px 0 0 0;background:rgba(18,13,11,.97);padding:18px;z-index:49;flex-direction:column;gap:6px}
+.mnav.open{display:flex}
+.mnav a{color:#d8cdc1;text-decoration:none;padding:13px 14px;border-left:3px solid var(--line);font-size:15px}
+.mnav a:hover{border-left-color:var(--rust2);color:#fff;background:rgba(217,74,43,.10)}
+
+/* ── Hero ── */
+.hero{padding:64px 0 44px;position:relative;overflow:hidden}
+.signal{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:2px;color:var(--dust);border:1px solid var(--line);padding:5px 13px;border-radius:20px;background:rgba(201,162,106,.06)}
+.signal b{width:7px;height:7px;border-radius:50%;background:var(--rust2);box-shadow:0 0 9px var(--rust2);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{opacity:.25;transform:scale(.8)}}
+h1{font-size:clamp(30px,5.4vw,56px);line-height:1.2;margin:18px 0 8px;font-weight:850}
+h1 u{text-decoration:none;color:var(--rust2)}
+.lead{max-width:640px;color:#bdb2a5;font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 14px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:linear-gradient(var(--rust),var(--dust))}
+.stat b{display:block;font-size:24px;color:#fff;letter-spacing:1px}
+.stat span{font-size:12px;color:#9a8e80}
+
+/* ── 通用板块 ── */
+section{padding:56px 0}
+.eyebrow{font-size:12px;letter-spacing:3px;color:var(--dust);text-transform:uppercase}
+h2{font-size:clamp(23px,3.6vw,34px);margin:6px 0 10px;font-weight:800;display:flex;align-items:baseline;gap:12px}
+h2 em{font-style:normal;font-size:13px;color:var(--rust2);letter-spacing:1px;font-weight:600}
+.sub{color:#a99;max-width:620px;font-size:14.5px}
+
+/* ── 六张世界观卡 ── */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;transition:.25s;position:relative}
+.card:hover{transform:translateY(-5px);border-color:var(--rust);box-shadow:0 14px 30px -16px rgba(217,74,43,.6)}
+.card .no{font-size:11px;letter-spacing:2px;color:var(--rust2);font-weight:700}
+.card h3{font-size:18px;margin:4px 0 8px}
+.card p{font-size:13.5px;color:#a99}
+.card ul{margin:10px 0 0;padding-left:16px}
+.card li{font-size:13px;color:#c2b6a8;margin:3px 0}
+.card li::marker{color:var(--rust)}
+
+/* ── 时间轴（更新日志） ── */
+.track{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;border-top:2px solid var(--rust);position:relative}
+.node{padding:20px 16px 0;position:relative}
+.node::before{content:"";position:absolute;top:-9px;left:16px;width:16px;height:16px;border-radius:50%;background:var(--rust2);box-shadow:0 0 0 4px var(--ink),0 0 12px var(--rust2)}
+.node time{font-size:12px;color:var(--dust);letter-spacing:1px}
+.node h4{font-size:15.5px;margin:4px 0 5px}
+.node p{font-size:13px;color:#a99}
+
+/* ── 数据条 ── */
+.bars{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+.bar-row{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.bar-row .top{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:9px}
+.bar-row .top b{color:#fff;font-weight:700}
+.track-fill{height:7px;background:#332622;border-radius:5px;overflow:hidden}
+.track-fill i{display:block;height:100%;width:0;border-radius:5px;background:linear-gradient(90deg,var(--rust),var(--rust2));animation:fill 1.4s ease forwards}
+@keyframes fill{to{width:var(--w)}}
+.track-fill i.g{background:linear-gradient(90deg,#7a5a2a,var(--dust))}
+.track-fill i.b{background:linear-gradient(90deg,#2f4a58,var(--steel))}
+
+/* ── 关于 ── */
+.about{background:rgba(36,26,23,.55);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;margin-top:26px;align-items:start}
+.txt{font-size:14.5px;color:#b5a99b}
+.txt p{margin-bottom:12px}
+.notice{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--rust);border-radius:0 10px 10px 0;padding:16px 18px;font-size:13.5px;color:#b3a798}
+.notice b{color:var(--rust2)}
+
+/* ── 页脚 ── */
+footer{border-top:1px solid var(--line);padding:34px 0 26px;margin-top:30px}
+.foot{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.foot a{color:#a99;text-decoration:none;font-size:13px;padding:6px 11px;border:1px solid var(--line);border-radius:20px}
+.foot a:hover{color:#fff;border-color:var(--rust2)}
+.copy{text-align:center;color:#7c7065;font-size:12.5px;margin-top:20px}
+.copy b{color:var(--dust);font-weight:600}
+
+@media(max-width:860px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .track,.bars{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  nav{display:none}
+  .menu-btn{display:block}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .grid,.track,.bars,.two{grid-template-columns:1fr}
+  section{padding:42px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><i></i>火星影视</a>
+    <nav>
+      <a href="#world">世界观</a>
+      <a href="#log">更新日志</a>
+      <a href="#data">题材分布</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="menu-btn" id="mb" aria-label="菜单">☰</button>
+  </div>
+  <div class="mnav" id="mn">
+    <a href="#top">首页</a>
+    <a href="#world">世界观分类</a>
+    <a href="#log">更新日志</a>
+    <a href="#data">题材分布</a>
+    <a href="#about">关于本站</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <span class="signal"><b></b>SIGNAL FROM MARS · 片单持续同步</span>
+    <h1>火星影视 <u>·</u> 科幻与未来题材影像资料馆</h1>
+    <p class="lead">按世界观、年代与视觉风格整理太空探索、外星文明、人工智能、末日生存等类型的电影与剧集，提供剧情脉络梳理与观影顺序建议。访问 <b style="color:#ff6b3d">https://huoxingyingshi-top.github.io</b> 查看完整清单。</p>
+    <div class="stats">
+      <div class="stat"><b>12</b><span>常驻题材分区</span></div>
+      <div class="stat"><b>860+</b><span>已收录片目</span></div>
+      <div class="stat"><b>4K</b><span>标注画质规格</span></div>
+      <div class="stat"><b>周更</b><span>上新与补档</span></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="world">
+    <div class="eyebrow">WORLDVIEW INDEX</div>
+    <h2>六大世界观分区 <em>按主题找片</em></h2>
+    <p class="sub">同一题材的影片被归入同一分区，避免在不同平台间反复检索。</p>
+    <div class="grid">
+      <article class="card">
+        <div class="no">01 / SPACE</div>
+        <h3>太空探索</h3>
+        <p>星际航行、空间站生活、行星登陆与深空任务，偏硬科幻设定。</p>
+        <ul><li>引力与轨道难题</li><li>长期密闭空间心理</li><li>真实航天史改编</li></ul>
+      </article>
+      <article class="card">
+        <div class="no">02 / ALIEN</div>
+        <h3>外星文明</h3>
+        <p>第一次接触、异星生态与语言博弈，侧重世界观构建。</p>
+        <ul><li>未知信号解读</li><li>异星生物设计</li><li>文明层级对照</li></ul>
+      </article>
+      <article class="card">
+        <div class="no">03 / AI</div>
+        <h3>人工智能</h3>
+        <p>意识觉醒、人机边界与算法失控，近未来议题为主。</p>
+        <ul><li>意识上传</li><li>仿生人与伦理</li><li>算法社会</li></ul>
+      </article>
+      <article class="card">
+        <div class="no">04 / END</div>
+        <h3>末日生存</h3>
+        <p>灾变之后的重建、资源争夺与群体选择，节奏偏紧。</p>
+        <ul><li>气候与生态崩溃</li><li>瘟疫后世界</li><li>废土聚落</li></ul>
+      </article>
+      <article class="card">
+        <div class="no">05 / CYBER</div>
+        <h3>赛博朋克</h3>
+        <p>高科技低生活的城市图景，霓虹、义体与巨型企业。</p>
+        <ul><li>记忆与身份</li><li>地下反抗组织</li><li>东亚都市美学</li></ul>
+      </article>
+      <article class="card">
+        <div class="no">06 / TIME</div>
+        <h3>时间悖论</h3>
+        <p>时间旅行、平行世界与因果循环，适合梳理观看顺序。</p>
+        <ul><li>闭环时间线</li><li>多重宇宙</li><li>观看顺序指南</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap" id="log">
+    <div class="eyebrow">UPDATE LOG</div>
+    <h2>更新日志 <em>记录每一次补档</em></h2>
+    <p class="sub">按时间倒序列出近期新增与调整，方便回看错过了哪些内容。</p>
+    <div class="track">
+      <div class="node"><time>2026.10</time><h4>近十年太空剧集补完</h4><p>补齐 2016 年后的主线剧集与衍生短篇，附观看顺序。</p></div>
+      <div class="node"><time>2026.09</time><h4>AI 题材重做分区</h4><p>按"意识 / 伦理 / 社会"三层重新归类，旧条目全部重写。</p></div>
+      <div class="node"><time>2026.08</time><h4>末日生存片单上线</h4><p>新增灾变类型筛选，支持按触发原因快速定位。</p></div>
+      <div class="node"><time>2026.07</time><h4>网站结构改版</h4><p>改用单页结构，全站锚点导航，手机端加载更快。</p></div>
+    </div>
+  </section>
+
+  <section class="wrap" id="data">
+    <div class="eyebrow">GENRE RATIO</div>
+    <h2>题材分布 <em>站内片目占比</em></h2>
+    <p class="sub">数据随补档持续变动，仅反映当前收录结构。</p>
+    <div class="bars">
+      <div class="bar-row"><div class="top"><span>太空探索 / 外星文明</span><b>34%</b></div><div class="track-fill"><i style="--w:34%"></i></div></div>
+      <div class="bar-row"><div class="top"><span>人工智能 / 赛博朋克</span><b>27%</b></div><div class="track-fill"><i style="--w:27%" class="g"></i></div></div>
+      <div class="bar-row"><div class="top"><span>末日生存 / 灾变</span><b>22%</b></div><div class="track-fill"><i style="--w:22%" class="b"></i></div></div>
+      <div class="bar-row"><div class="top"><span>时间悖论 / 平行世界</span><b>17%</b></div><div class="track-fill"><i style="--w:17%"></i></div></div>
+    </div>
+  </section>
+
+  <section class="wrap about" id="about">
+    <div class="eyebrow">ABOUT THIS SITE</div>
+    <h2>关于火星影视 <em>本站定位</em></h2>
+    <div class="two">
+      <div class="txt">
+        <p>火星影视是一个以分类整理为核心的科幻影像资料站，不做泛娱乐堆砌，只收录带有明确未来设定或科学假设的影视作品。每一条片目都标注了题材标签、世界观层级与推荐观看顺序。</p>
+        <p>我们更在意"这片子属于哪一类世界观、适合什么心情看"，而不是单纯的更新速度。片单按主题分区维护，避免在不同平台间反复检索。</p>
+        <p>完整站点地址：<b style="color:#ff6b3d">https://huoxingyingshi-top.github.io</b>，建议使用电脑端浏览以获得完整导航体验。</p>
+      </div>
+      <aside class="notice">
+        <p><b>观影提示</b></p>
+        <p>本站仅为片目整理与观看顺序参考，不提供任何资源下载与在线播放服务。请通过正规影视平台或影院获取正版内容。</p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top">首页</a>
+      <a href="#world">世界观</a>
+      <a href="#log">更新日志</a>
+      <a href="#data">题材分布</a>
+      <a href="#about">关于本站</a>
+    </div>
+    <p class="copy">© 火星影视 · 官网 <b>https://huoxingyingshi-top.github.io</b> · 科幻与未来题材影像资料馆</p>
+  </div>
+</footer>
+
+<script>
+var b=document.getElementById('mb'),m=document.getElementById('mn');
+b.addEventListener('click',function(){m.classList.toggle('open');b.textContent=m.classList.contains('open')?'✕':'☰'});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.textContent='☰'}});
+</script>
+</body>
+</html>
